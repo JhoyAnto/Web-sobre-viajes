@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora nuestros destinos de viaje organizados por continentes. Encuentra tu próxima aventura con nuestras guías detalladas.">
+    <meta name="keywords" content="destinos de viaje, guías turísticas, lugares para visitar, turismo mundial">
+    <title>Destinos - Travel Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <h1>Travel Explorer</h1>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="destinos.html" class="nav-link active">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="articulos.html" class="nav-link">Artículos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar destinos..." id="search-input">
+                    <button class="search-btn" id="search-btn">🔍</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Destinos del Mundo</h1>
+                <p class="page-subtitle">Descubre lugares increíbles organizados por continentes</p>
+            </div>
+        </section>
+
+        <section class="destinations-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="europa">Europa</button>
+                    <button class="filter-btn" data-filter="asia">Asia</button>
+                    <button class="filter-btn" data-filter="america">América</button>
+                    <button class="filter-btn" data-filter="africa">África</button>
+                    <button class="filter-btn" data-filter="oceania">Oceanía</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="destinations-content">
+            <div class="container">
+                <div class="destinations-grid" id="destinations-grid">
+                    <!-- Europa -->
+                    <article class="destination-card" data-category="europa">
+                        <img src="/placeholder.svg?height=250&width=350" alt="París, Francia" class="destination-image">
+                        <div class="destination-content">
+                            <span class="destination-continent">Europa</span>
+                            <h3 class="destination-title">París, Francia</h3>
+                            <p class="destination-description">La ciudad de la luz te espera con sus monumentos icónicos, museos mundialmente famosos y su incomparable gastronomía.</p>
+                            <div class="destination-highlights">
+                                <span class="highlight">Torre Eiffel</span>
+                                <span class="highlight">Louvre</span>
+                                <span class="highlight">Notre Dame</span>
+                            </div>
+                            <a href="articulo-paris.html" class="read-more">Explorar París</a>
+                        </div>
+                    </article>
+
+                    <article class="destination-card" data-category="europa">
+                        <img src="/placeholder.svg?height=250&width=350" alt="Roma, Italia" class="destination-image">
+                        <div class="destination-content">
+                            <span class="destination-continent">Europa</span>
+                            <h3 class="destination-title">Roma, Italia</h3>
+                            <p class="destination-description">La ciudad eterna donde cada piedra cuenta una historia de más de 2000 años de civilización.</p>
+                            <div class="destination-highlights">
+                                <span class="highlight">Coliseo</span>
+                                <span class="highlight">Vaticano</span>
+                                <span class="highlight">Fontana di Trevi</span>
+                            </div>
+                            <a href="#" class="read-more">Explorar Roma</a>
+                        </div>
+                    </article>
+
+                    <!-- Asia -->
+                    <article class="destination-card" data-category="asia">
+                        <img src="/placeholder.svg?height=250&width=350" alt="Tokio, Japón" class="destination-image">
+                        <div class="destination-content">
+                            <span class="destination-continent">Asia</span>
+                            <h3 class="destination-title">Tokio, Japón</h3>
+                            <p class="destination-description">Una metrópolis fascinante donde la tradición milenaria convive armoniosamente con la tecnología más avanzada.</p>
+                            <div class="destination-highlights">
+                                <span class="highlight">Shibuya</span>
+                                <span class="highlight">Templos</span>
+                                <span class="highlight">Sushi</span>
+                            </div>
+                            <a href="articulo-tokyo.html" class="read-more">Explorar Tokio</a>
+                        </div>
+                    </article>
+
+                    <article class="destination-card" data-category="asia">
+                        <img src="/placeholder.svg?height=250&width=350" alt="Bali, Indonesia" class="destination-image">
+                        <div class="destination-content">
+                            <span class="destination-continent">Asia</span>
+                            <h3 class="destination-title">Bali, Indonesia</h3>
+                            <p class="destination-description">La isla de los dioses ofrece playas paradisíacas, templos sagrados y una cultura rica en tradiciones.</p>
+                            <div class="destination-highlights">
+                                <span class="highlight">Templos</span>
+                                <span class="highlight">Playas</span>
+                                <span class="highlight">Arrozales</span>
+                            </div>
+                            <a href="#" class="read-more">Explorar Bali</a>
+                        </div>
+                    </article>
+
+                    <!-- América -->
+                    <article class="destination-card" data-category="america">
+                        <img src="/placeholder.svg?height=250&width=350" alt="Machu Picchu, Perú" class="destination-image">
+                        <div class="destination-content">
+                            <span class="destination-continent">América</span>
+                            <h3 class="destination-title">Machu Picchu, Perú</h3>
+                            <p class="destination-description">La misteriosa ciudadela inca en lo alto de los Andes, una de las maravillas del mundo moderno.</p>
+                            <div class="destination-highlights">
+                                <span class="highlight">Ruinas Incas</span>
+                                <span class="highlight">Camino Inca</span>
+                                <span class="highlight">Andes</span>
+                            </div>
+                            <a href="articulo-machu-picchu.html" class="read-more">Explorar Machu Picchu</a>
+                        </div>
+                    </article>
+
+                    <article class="destination-card" data-category="america">
+                        <img src="/placeholder.svg?height=250&width=350" alt="Nueva York, EE.UU." class="destination-image">
+                        <div class="destination-content">
+                            <span class="destination-continent">América</span>
+                            <h3 class="destination-title">Nueva York, EE.UU.</h3>
+                            <p class="destination-description">La ciudad que nunca duerme, donde los sueños se hacen realidad entre rascacielos y Broadway.</p>
+                            <div class="destination-highlights">
+                                <span class="highlight">Times Square</span>
+                                <span class="highlight">Central Park</span>
+                                <span class="highlight">Broadway</span>
+                            </div>
+                            <a href="#" class="read-more">Explorar Nueva York</a>
+                        </div>
+                    </article>
+
+                    <!-- África -->
+                    <article class="destination-card" data-category="africa">
+                        <img src="/placeholder.svg?height=250&width=350" alt="Safari en Kenia" class="destination-image">
+                        <div class="destination-content">
+                            <span class="destination-continent">África</span>
+                            <h3 class="destination-title">Safari en Kenia</h3>
+                            <p class="destination-description">Vive la experiencia única de observar la vida salvaje en su hábitat natural en las vastas sabanas africanas.</p>
+                            <div class="destination-highlights">
+                                <span class="highlight">Big Five</span>
+                                <span class="highlight">Masai Mara</span>
+                                <span class="highlight">Migración</span>
+                            </div>
+                            <a href="#" class="read-more">Explorar Kenia</a>
+                        </div>
+                    </article>
+
+                    <!-- Oceanía -->
+                    <article class="destination-card" data-category="oceania">
+                        <img src="/placeholder.svg?height=250&width=350" alt="Sídney, Australia" class="destination-image">
+                        <div class="destination-content">
+                            <span class="destination-continent">Oceanía</span>
+                            <h3 class="destination-title">Sídney, Australia</h3>
+                            <p class="destination-description">Una ciudad vibrante con arquitectura icónica, playas espectaculares y una cultura única.</p>
+                            <div class="destination-highlights">
+                                <span class="highlight">Opera House</span>
+                                <span class="highlight">Harbour Bridge</span>
+                                <span class="highlight">Bondi Beach</span>
+                            </div>
+                            <a href="#" class="read-more">Explorar Sídney</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Travel Explorer</h3>
+                    <p class="footer-description">Tu guía confiable para descubrir los mejores destinos del mundo.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Destinos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Europa</a></li>
+                        <li><a href="#" class="footer-link">Asia</a></li>
+                        <li><a href="#" class="footer-link">América</a></li>
+                        <li><a href="#" class="footer-link">África</a></li>
+                        <li><a href="#" class="footer-link">Oceanía</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Recursos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Guías de Viaje</a></li>
+                        <li><a href="#" class="footer-link">Consejos</a></li>
+                        <li><a href="#" class="footer-link">Presupuestos</a></li>
+                        <li><a href="#" class="footer-link">Itinerarios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="contacto.html" class="footer-link">Contáctanos</a></li>
+                        <li><a href="sobre-nosotros.html" class="footer-link">Sobre Nosotros</a></li>
+                        <li><a href="#" class="footer-link">Política de Privacidad</a></li>
+                        <li><a href="#" class="footer-link">Términos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Travel Explorer. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

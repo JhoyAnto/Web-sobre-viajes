@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contáctanos en Travel Explorer. Estamos aquí para ayudarte con tus preguntas sobre viajes, colaboraciones o cualquier consulta.">
+    <meta name="keywords" content="contacto, travel explorer, consultas de viaje, colaboraciones">
+    <title>Contacto - Travel Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <h1>Travel Explorer</h1>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="destinos.html" class="nav-link">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="articulos.html" class="nav-link">Artículos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link active">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Buscar..." id="search-input">
+                    <button class="search-btn" id="search-btn">🔍</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="page-title">Contáctanos</h1>
+                <p class="page-subtitle">Estamos aquí para ayudarte con tus preguntas sobre viajes, colaboraciones o cualquier consulta</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-section">
+                        <h2 class="section-title">Envíanos un Mensaje</h2>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nombre Completo</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Asunto</label>
+                                <select id="subject" name="subject" class="form-select" required>
+                                    <option value="">Selecciona un tema</option>
+                                    <option value="consulta-viaje">Consulta de Viaje</option>
+                                    <option value="colaboracion">Colaboración</option>
+                                    <option value="prensa">Prensa</option>
+                                    <option value="sugerencia">Sugerencia</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="6" required placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="form-submit">Enviar Mensaje</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-section">
+                        <h2 class="section-title">Información de Contacto</h2>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-details">
+                                    <h3 class="contact-title">Email</h3>
+                                    <p class="contact-text">info@travelexplorer.com</p>
+                                    <p class="contact-description">Respuesta en 24-48 horas</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div class="contact-details">
+                                    <h3 class="contact-title">Redes Sociales</h3>
+                                    <div class="social-links">
+                                        <a href="#" class="social-link">📘 Facebook</a>
+                                        <a href="#" class="social-link">📷 Instagram</a>
+                                        <a href="#" class="social-link">🐦 Twitter</a>
+                                        <a href="#" class="social-link">📺 YouTube</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">⏰</div>
+                                <div class="contact-details">
+                                    <h3 class="contact-title">Horario de Atención</h3>
+                                    <p class="contact-text">Lunes a Viernes: 9:00 - 18:00</p>
+                                    <p class="contact-text">Sábados: 10:00 - 14:00</p>
+                                    <p class="contact-description">Horario GMT-5</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-reasons">
+                            <h3 class="reasons-title">¿Por qué contactarnos?</h3>
+                            <ul class="reasons-list">
+                                <li>Consultas personalizadas sobre destinos</li>
+                                <li>Colaboraciones y partnerships</li>
+                                <li>Invitaciones de prensa</li>
+                                <li>Sugerencias para nuevos artículos</li>
+                                <li>Reportar errores o problemas técnicos</li>
+                                <li>Propuestas de trabajo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Ofrecen servicios de planificación de viajes?</h3>
+                        <p class="faq-answer">Actualmente no ofrecemos servicios de planificación personalizados, pero nuestros artículos y guías contienen toda la información necesaria para planificar tu viaje de forma independiente.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Puedo usar sus fotos en mi blog?</h3>
+                        <p class="faq-answer">Todas nuestras fotos están protegidas por derechos de autor. Si deseas usar alguna imagen, por favor contáctanos para solicitar permisos específicos.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Cómo puedo colaborar como escritor invitado?</h3>
+                        <p class="faq-answer">¡Nos encanta recibir colaboraciones! Envíanos un email con tu propuesta de artículo, ejemplos de tu trabajo previo y una breve biografía.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Actualizan regularmente la información de los destinos?</h3>
+                        <p class="faq-answer">Sí, revisamos y actualizamos nuestros artículos regularmente. Si encuentras información desactualizada, por favor háznoslo saber.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Travel Explorer</h3>
+                    <p class="footer-description">Tu guía confiable para descubrir los mejores destinos del mundo.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Destinos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Europa</a></li>
+                        <li><a href="#" class="footer-link">Asia</a></li>
+                        <li><a href="#" class="footer-link">América</a></li>
+                        <li><a href="#" class="footer-link">África</a></li>
+                        <li><a href="#" class="footer-link">Oceanía</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Recursos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Guías de Viaje</a></li>
+                        <li><a href="#" class="footer-link">Consejos</a></li>
+                        <li><a href="#" class="footer-link">Presupuestos</a></li>
+                        <li><a href="#" class="footer-link">Itinerarios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="contacto.html" class="footer-link">Contáctanos</a></li>
+                        <li><a href="sobre-nosotros.html" class="footer-link">Sobre Nosotros</a></li>
+                        <li><a href="#" class="footer-link">Política de Privacidad</a></li>
+                        <li><a href="#" class="footer-link">Términos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Travel Explorer. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
